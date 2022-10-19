@@ -60,16 +60,26 @@ console.log("Total divisores",divisoresV3(32));
 //Ejercicio Imagenes
 
 function imagen(){ 
-    let num_imagen = parseInt(document.getElementById("numero").value);
-
-    let imagen = document.getElementById("imagen");
+    let num_imagen = parseInt(document.getElementById("num_imagen").value);
+    console.log(num_imagen);
 
     switch (num_imagen) {
         case 1:
+            document.getElementById("tamañoimg").src="https://images.pexels.com/photos/1870302/pexels-photo-1870302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+            document.getElementById("tamañoimg").style.display = "block";
             break;
-    
-        default:
-            break;
+        case 2:
+            document.getElementById("tamañoimg").src="https://images.pexels.com/photos/320014/pexels-photo-320014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+            document.getElementById("tamañoimg").style.display = "block";
+            break
+        case 3:
+            document.getElementById("tamañoimg").src="https://images.pexels.com/photos/2065357/pexels-photo-2065357.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+            document.getElementById("tamañoimg").style.display = "block";
+            break
+        case 4:
+            document.getElementById("tamañoimg").src="https://images.pexels.com/photos/3512800/pexels-photo-3512800.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1";
+            document.getElementById("tamañoimg").style.display = "block";
+            break
     }
 }
 
