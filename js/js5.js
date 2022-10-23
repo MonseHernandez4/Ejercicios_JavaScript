@@ -4,17 +4,25 @@ function calcular(){
     let operacion = document.getElementById("operacion").value; 
     let resultado = document.getElementById("resultado");
 
-    if(operacion == '+'){
-        resultado.value = numero1 + numero2;
-    }
-    else if(operacion == "-"){
-        resultado.value = numero1 - numero2;
-    }
-    else if(operacion == "/"){
-        resultado.value = numero1 / numero2;
-    }
-    else if(operacion == "*"){
-        resultado.value = numero1 * numero2;
-    }
+    switch (operacion) 
+    {
+        case '1':
+            resultado.value = numero1 + numero2;
+            break;
 
+        case '2':
+            resultado.value = numero1 - numero2;
+            break;
+
+        case '3':
+            resultado.value = numero1 * numero2;
+            break;
+            
+        case '4':
+            resultado.value = numero1 / numero2;
+            break;
+
+        default:
+            break;
+    }
 }

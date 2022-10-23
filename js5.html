@@ -11,17 +11,24 @@
 
     <h1>Calculadora</h1>
     <script src="js/js5.js"></script>
-    <br>
+
+<div class="fondo">
     <div>
         <label for="numero1">Número: </label><input type="text" name="" id="numero1">
     </div>
     <br>
     <div>
-        <label for="numero2">Número: </label><input type="text" name="" id="numero2">
+        <label for="operacion">Operación: </label>
+        <select name="operacion" id="operacion">
+            <option value='1'> + </option>
+            <option value='2'> - </option>
+            <option value='3'> * </option>
+            <option value='4'> / </option>
+        </select>
     </div>
     <br>
     <div>
-        <label for="operacion">Operación: </label><input type="text" name="" id="operacion">
+        <label for="numero2">Número: </label><input type="text" name="" id="numero2">
     </div>
     <br>
     <div>
@@ -31,7 +38,7 @@
     <div>
     <button id="boton" onclick="calcular()">Calcular</button>
     </div>
-    
+</div>
 
 
 </body>
