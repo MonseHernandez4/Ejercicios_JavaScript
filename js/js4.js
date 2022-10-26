@@ -91,3 +91,44 @@ Ejemplo: 6 sus divisores son 1,2,3 y 6, sumando 1+2+3 = 6
 
 Numeros en la lista: 2
 Resultado: 6-28*/
+
+function Mostrar(){
+    let cant = parseInt(document.getElementById("numeros").value);
+    console.log(cant);
+    
+    let resultado = document.getElementById("resultado");
+    console.log(document.getElementById("resultado"));
+    resultado.value = nums_result(cant);
+    console.log(resultado.value = nums_result(cant));
+}
+
+function nums_result (cant_nums) 
+{
+    let numero = 1;
+    num_perfecto = []
+    while (num_perfecto.length < cant_nums) 
+    {
+        lista_nums = [];
+        let suma = 0;
+    
+        for (i=1 ; i<= numero; i++) 
+        {
+            if ( numero % i == 0 ) {
+                lista_nums.push(i);
+            }
+            else {}
+        }
+    
+        for ( i=0 ; i<= lista_nums.length-2; i++) 
+        {
+            suma += lista_nums[i];
+        }
+    
+        if ( suma == numero ) 
+        {
+            num_perfecto.push(suma);
+        }
+        numero ++;
+    }
+    return num_perfecto;
+}
